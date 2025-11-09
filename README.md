@@ -1,106 +1,108 @@
-# Telco hurn rediction
+# 📘 Telco Churn Prediction
 
-## 📌 verview
+## 📌 Overview | معرفی کلی
+This project predicts **customer churn** in a telecommunications company using **real customer data** and **machine learning models**.  
+The goal is to **identify customers likely to leave** and understand **the key factors influencing churn**, helping businesses design better retention strategies.
 
-This project predicts customer churn in a telecom company using real customer data and machine learning. The main goal is to identify which customers are likely to leave and understand why.
+این پروژه به پیش‌بینی **ریزش مشتریان در شرکت‌های مخابراتی** با استفاده از **داده‌های واقعی مشتریان** و مدل‌های **یادگیری ماشین** می‌پردازد.  
+هدف، **شناسایی مشتریان در معرض ترک** و درک **عوامل مؤثر بر تصمیم آن‌ها** برای طراحی کمپین‌های وفادسازی مؤثر است.
 
-**خلاصه فارسی:**  
-پروژه برای پیش‌بینی ریزش مشتریان شرکت مخابرات با داده‌های واقعی و یادگیری ماشین است. هدف، شناسایی مشتریان در معرض ترک و عوامل موثر بر آن‌هاست.
+---
 
-## 📂 ataset
+## 📂 Dataset | داده‌ها
+- **Source:** [Kaggle – Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)  
+- **Records:** 7,043 customers  
+- **Features:** 21 features (demographics, services, payment details, etc.)
 
-- Source: Kaggle Telco ustomer hurn ataset
-- 7043 customer records
-- 21 features including demographics and service info
+دیتاست از **سایت Kaggle** استخراج شده و شامل **۷۰۴۳ رکورد مشتری** و **۲۱ ویژگی** مانند اطلاعات جمعیت‌شناختی، نوع سرویس و جزئیات پرداخت است.
 
-**خلاصه فارسی:**  
-دیتاست از سایت Kaggle شامل ۷۰۴۳ مشتری و ۲۱ ویژگی (مشخصات فردی و نوع سرویس‌ها) استخراج شده است.
-## 🛠️ Technologies Used
+---
 
-- ython 3
-- Jupyter Notebook
-- pandas, numpy
-- seaborn, matplotlib
-- scikit-learn (andomForestlassifier, preprocessing pipeline)
+## 🛠️ Technologies Used | ابزارها و فناوری‌ها
+| Category | Tools |
+|-----------|--------|
+| Language | Python 3 |
+| Environment | Jupyter Notebook |
+| Data Processing | pandas, numpy |
+| Visualization | seaborn, matplotlib |
+| Machine Learning | scikit-learn (RandomForestClassifier, preprocessing pipelines) |
 
-**خلاصه فارسی:**  
-در این پروژه از زبان پایتون، محیط Jupyter و کتابخانه‌های داده‌کاوی مثل pandas، numpy، matplotlib، seaborn و scikit-learn استفاده شده است.
+در این پروژه از زبان **پایتون**، محیط **Jupyter** و کتابخانه‌های **pandas، numpy، matplotlib، seaborn** و **scikit-learn** برای مدل‌سازی استفاده شده است.
 
+---
 
-contentcopy
-markdown
-
-noteadd
-
-## 📁 roject Structure
-
-Telco-hurn-rediction/
-
+## 📁 Project Structure | ساختار پروژه
+Telco-Churn-Prediction/
+│
 ├── notebooks/
+│ ├── 1_data_exploration.ipynb # Data cleaning, visualization, and EDA
+│ └── 2_churn_prediction_model.ipynb # Model training and evaluation
+│
+├── tests/
+│ └── test_imports.py # Basic test for dependency validation
+│
+├── requirements.txt # Python dependencies
+├── pyproject.toml # Project configuration
+├── README.md # Project documentation
+└── LICENSE # MIT license
 
-│ ├── 1dataexploration.ipynb
 
-│ └── 2churnpredictionmodel.ipynb
+پروژه شامل دو نوت‌بوک برای تحلیل داده و مدل‌سازی، فایل‌های پیکربندی و تست‌ها است.
 
-├── M.md
+---
 
+## 📊 Results & Insights | نتایج و تحلیل‌ها
+- **Model Used:** Random Forest Classifier  
+- **Accuracy:** ~80%  
+- **Key Factors Influencing Churn:**  
+  - Contract Type  
+  - Tenure (Customer Lifetime)  
+  - Monthly Charges  
 
-**خلاصه فارسی:**  
-پروژه شامل دو دفترچه یادداشت (notebook) برای تحلیل داده و ساخت مدل، و یک فایل توضیحات کلی است.
-## 📊 esults & nsights
+مدل **Random Forest** با دقت حدود **۸۰٪** توانست مشتریان در معرض ریزش را شناسایی کند.  
+ویژگی‌هایی مثل **نوع قرارداد، مدت عضویت و هزینه ماهانه** بیشترین تأثیر را داشتند.
 
-- The andom Forest model achieved an accuracy of 80% in predicting customer churn.
-- The most important features affecting churn were contract type, tenure, and monthly charges.
-- arly identification of high-risk customers enables targeted retention campaigns.
+---
 
-**خلاصه فارسی:**  
-مدل andom Forest با دقت ۸۰٪ عملکرد مناسبی داشت. نوع قرارداد، مدت زمان عضویت و مبلغ ماهانه، بیشترین تاثیر را در ریزش مشتریان داشتند. شناسایی زودهنگام مشتریان در معرض ترک، کمک زیادی به برنامه‌های نگهداری می‌کند.
+## ▶️ How to Run | نحوه اجرا
+To run this project locally:
 
-## ▶️ ow to un
+```bash
+# 1. Clone the repository
+git clone https://github.com/shahpari2kht/Telco-Churn-Prediction.git
+cd Telco-Churn-Prediction
 
-**To run this project:**
-
-1. lone the repository:
-   ```bash
-   git clone https://github.com/parisamohammadzadeh/Telco-hurn-rediction.git
-   cd Telco-hurn-rediction
-nstall required libraries:
-
-contentcopy
-bash
-
-noteadd
-ویرایش با anvas
+# 2. Install dependencies
 pip install -r requirements.txt
-pen the notebooks in Jupyter and run the cells:
 
-contentcopy
-bash
-
-noteadd
-ویرایش با anvas
+# 3. Open notebooks
 jupyter notebook
-خلاصه فارسی: 
 
-برای اجرای پروژه، مخزن را کلون کرده، کتابخانه‌ها را نصب کنید و فایل‌های نوت‌بوک را در محیط Jupyter اجرا کنید.
 
-## 🤝 ontribution
+برای اجرای پروژه:
 
-ontributions, issues and feature requests are welcome!  
-Feel free to submit a pull request or open an issue.
+مخزن را کلون کنید
 
-**خلاصه فارسی:**  
-هرگونه بهبود، گزارش خطا یا پیشنهاد توسعه با آغوش باز پذیرفته می‌شود!
+کتابخانه‌ها را نصب کنید
 
-## 📝 icense
+فایل‌های نوت‌بوک را در محیط Jupyter اجرا کنید
 
-This project is licensed under the MT icense.
+🤝 Contribution | مشارکت
 
-**خلاصه فارسی:**  
-این پروژه با مجوز MT منتشر شده و استفاده، انتشار و توسعه آزاد است.
+Contributions, bug reports, and feature suggestions are welcome.
+Feel free to open an issue or submit a pull request.
 
-## 📬 ontact
+هرگونه پیشنهاد، گزارش باگ یا توسعه‌ی جدید با آغوش باز پذیرفته می‌شود.
 
-arisa Mohammadzadeh  
-[mail: Shahpari2kht@gmail.com](mailto:Shahpari2kht@gmail.com)  
-[inkedn](https://www.linkedin.com/in/parisamohammadzadeh) | [itub](https://github.com/shahpari2kht)
+📝 License | مجوز
+
+This project is released under the MIT License — free to use, modify, and distribute.
+این پروژه تحت مجوز MIT منتشر شده و استفاده و توسعه‌ی آزاد دارد.
+
+📬 Contact | ارتباط با من
+
+👩‍💻 Parisa Mohammadzadeh
+📧 Email: Shahpari2kht@gmail.com
+
+🔗 LinkedIn
+ | GitHub

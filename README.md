@@ -1,5 +1,9 @@
 # 📘 Telco Churn Prediction
 
+**Version:** 1.0.0 | **Last Updated:** 2025-11-09
+
+---
+
 ## 📌 Overview | معرفی کلی
 This project predicts **customer churn** in a telecommunications company using **real customer data** and **machine learning models**.  
 The goal is to **identify customers likely to leave** and understand **the key factors influencing churn**, helping businesses design better retention strategies.
@@ -16,6 +20,10 @@ The goal is to **identify customers likely to leave** and understand **the key f
 
 دیتاست از **سایت Kaggle** استخراج شده و شامل **۷۰۴۳ رکورد مشتری** و **۲۱ ویژگی** مانند اطلاعات جمعیت‌شناختی، نوع سرویس و جزئیات پرداخت است.
 
+> **Note:** Dataset not included in the repository due to size and licensing; please download manually.
+
+> **نکته:** دیتاست به دلیل حجم و محدودیت لایسنس در مخزن قرار نگرفته؛ لطفاً به صورت دستی دانلود شود.
+
 ---
 
 ## 🛠️ Technologies Used | ابزارها و فناوری‌ها
@@ -26,8 +34,6 @@ The goal is to **identify customers likely to leave** and understand **the key f
 | Data Processing | pandas, numpy |
 | Visualization | seaborn, matplotlib |
 | Machine Learning | scikit-learn (RandomForestClassifier, preprocessing pipelines) |
-
-در این پروژه از زبان **پایتون**، محیط **Jupyter** و کتابخانه‌های **pandas، numpy، matplotlib، seaborn** و **scikit-learn** برای مدل‌سازی استفاده شده است.
 
 ---
 
@@ -47,14 +53,12 @@ Telco-Churn-Prediction/
 └── LICENSE # MIT license
 
 
-پروژه شامل دو نوت‌بوک برای تحلیل داده و مدل‌سازی، فایل‌های پیکربندی و تست‌ها است.
-
 ---
 
 ## 📊 Results & Insights | نتایج و تحلیل‌ها
 - **Model Used:** Random Forest Classifier  
 - **Accuracy:** ~80%  
-- **Key Factors Influencing Churn:**  
+- **Key Features Influencing Churn:**  
   - Contract Type  
   - Tenure (Customer Lifetime)  
   - Monthly Charges  
@@ -62,11 +66,15 @@ Telco-Churn-Prediction/
 مدل **Random Forest** با دقت حدود **۸۰٪** توانست مشتریان در معرض ریزش را شناسایی کند.  
 ویژگی‌هایی مثل **نوع قرارداد، مدت عضویت و هزینه ماهانه** بیشترین تأثیر را داشتند.
 
+**Suggested Visualization:**  
+
+
+[Insert Feature Importance Chart or Confusion Matrix here]
+
+
 ---
 
 ## ▶️ How to Run | نحوه اجرا
-To run this project locally:
-
 ```bash
 # 1. Clone the repository
 git clone https://github.com/shahpari2kht/Telco-Churn-Prediction.git
